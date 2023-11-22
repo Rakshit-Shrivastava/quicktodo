@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/quicktodo/static/css/main.b22d7f93.chunk.css",
+    "main.js": "/quicktodo/static/js/main.02b8b776.chunk.js",
+    "main.js.map": "/quicktodo/static/js/main.02b8b776.chunk.js.map",
+    "runtime-main.js": "/quicktodo/static/js/runtime-main.541a188d.js",
+    "runtime-main.js.map": "/quicktodo/static/js/runtime-main.541a188d.js.map",
+    "static/js/2.3749e722.chunk.js": "/quicktodo/static/js/2.3749e722.chunk.js",
+    "static/js/2.3749e722.chunk.js.map": "/quicktodo/static/js/2.3749e722.chunk.js.map",
+    "static/js/3.6faa5f6f.chunk.js": "/quicktodo/static/js/3.6faa5f6f.chunk.js",
+    "static/js/3.6faa5f6f.chunk.js.map": "/quicktodo/static/js/3.6faa5f6f.chunk.js.map",
+    "index.html": "/quicktodo/index.html",
+    "static/css/main.b22d7f93.chunk.css.map": "/quicktodo/static/css/main.b22d7f93.chunk.css.map",
+    "static/js/2.3749e722.chunk.js.LICENSE.txt": "/quicktodo/static/js/2.3749e722.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.541a188d.js",
+    "static/js/2.3749e722.chunk.js",
+    "static/css/main.b22d7f93.chunk.css",
+    "static/js/main.02b8b776.chunk.js"
+  ]
+}
