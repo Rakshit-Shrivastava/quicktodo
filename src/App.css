@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   }
+
+/* Todo */
+.todoContainer,.pdfContainer, .imageContainer, .textContainer{
+  border: 2px solid black;
+  width: 80vw;
+  height: 350px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.viewPan{
+  max-height: 300px;
+  list-style: none;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.viewPan li {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.viewPan li input{
+  flex-grow: 10;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.viewPan li .buttonArea{
+  flex-grow: 1;
+}
+
+.buttonArea {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonArea button{
+  width: 100%;
+  border-radius: 5px;
+  margin: 0px 2px;
+  cursor: pointer;
+}
+
+.createTodo{
+  list-style: none;
+}
+
+.createTodo li{
+  display: flex;
+  margin: 0px 10px;
+  padding: 10px;
+}
+
+.createTodo li input{
+  flex-grow: 20;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+}
+
+.createTodo li button{
+  flex-grow: 1;
+  border-radius: 5px;
+  margin: 0px 2px;
+  cursor: pointer;
 }

@@ -1,17 +1,30 @@
 {
-  "name": "oneutility",
+  "name": "quicktodo",
+  "homepage": "https://Rakshit-Shrivastava/quicktodo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "assert": "^2.1.0",
+    "fs": "^0.0.1-security",
+    "gh-pages": "^6.1.0",
+    "https-browserify": "^1.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "libreoffice-convert": "^1.4.1",
+    "os": "^0.1.2",
     "react": "^18.2.0",
+    "react-app-rewired": "^2.2.1",
     "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "4.0.3",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -34,5 +47,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "grunt-contrib-imagemin": "^4.0.0",
+    "path-browserify": "^1.0.1"
   }
 }
