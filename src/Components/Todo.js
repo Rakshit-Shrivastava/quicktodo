@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 
 const Todo = () => {
   const [text, setText] = useState('');
@@ -14,7 +14,7 @@ const Todo = () => {
   }
 
   function fetchTodo() {
-    setArr(Object.keys(localStorage))
+    setArr(Object.keys(localStorage));
   };
 
   useEffect(() => {
@@ -24,31 +24,38 @@ const Todo = () => {
   function deleteTodo(x) {
     localStorage.removeItem(x);
     fetchTodo();
-    alert("Todo has been deleted");
-    window.location.reload();
   }
 
   return (
     <div className='container text-center'>
-      <h1>My TODOs</h1>
-      <div className='todoContainer container'>
-        <ul className='viewPan'>
-          {arr.map((e, index) => {
-            return <li key={index}>
-              <input type="text" value={localStorage.getItem(e)} disabled />
-              <div className='buttonArea'>
-                {/* <button>Complete</button> */}
-                <button onClick={() => { deleteTodo(e) }}>Delete</button>
+      <h1 className='mt-3 display-4'>My TODOs</h1>
+      <div className="wrapper my-3">
+        <div className="container my-3">
+          {window.localStorage.length === 0 ? " You have nothing todo, Please do something..." :
+            arr.map((e, index) => {
+              return <div className="d-flex input" key={index}>
+                <div className="flex-grow-1 m-1">
+                  <input type="text" className="form-control disabled" defaultValue={localStorage.getItem(e)} />
+                </div>
+                <div className="m-1">
+                  <button type="button" className="btn btn-primary actionBtn" onClick={() => { deleteTodo(e) }}><i className="fa-regular fa-trash-can"></i></button>
+                </div>
               </div>
-            </li>
-          })}
-        </ul>
-        <ul className='createTodo'>
-          <li>
-            <input type="text" value={text} onChange={handleOnChange} />
-            <button onClick={createTodo}>Create Todo</button>
-          </li>
-        </ul>
+            })
+          }
+        </div>
+      </div>
+      <div className="wrapper">
+        <div className="container my-3">
+          <div className="d-flex input">
+            <div className="flex-grow-1 m-1">
+              <input type="text" className="form-control" value={text} onChange={handleOnChange} />
+            </div>
+            <div className="m-1">
+              <button type="button" className="btn btn-primary accordion actionBtn" onClick={createTodo}><i className="fa-solid fa-plus"></i></button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )

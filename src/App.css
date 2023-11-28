@@ -4,70 +4,17 @@
   box-sizing: border-box;
   }
 
-/* Todo */
-.todoContainer,.pdfContainer, .imageContainer, .textContainer{
-  border: 2px solid black;
-  width: 80vw;
-  height: 350px;
+.wrapper{
+  border: 1px solid grey;
+  border-radius: 10px;
 }
 
-.viewPan{
-  max-height: 300px;
-  list-style: none;
-  padding: 10px;
-  overflow-y: auto;
-}
-
-.viewPan li {
-  display: flex;
-  margin: 10px;
-}
-
-.viewPan li input{
-  flex-grow: 10;
-  padding: 5px;
-  border: none;
-  border-bottom: 1px solid black;
-  background-color: transparent;
-}
-
-.viewPan li .buttonArea{
-  flex-grow: 1;
-}
-
-.buttonArea {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.buttonArea button{
-  width: 100%;
-  border-radius: 5px;
-  margin: 0px 2px;
-  cursor: pointer;
-}
-
-.createTodo{
-  list-style: none;
-}
-
-.createTodo li{
-  display: flex;
-  margin: 0px 10px;
-  padding: 10px;
-}
-
-.createTodo li input{
-  flex-grow: 20;
-  padding: 5px;
-  border: none;
-  border-bottom: 1px solid black;
-  background-color: transparent;
-}
-
-.createTodo li button{
-  flex-grow: 1;
-  border-radius: 5px;
-  margin: 0px 2px;
-  cursor: pointer;
+@media (max-width: 575.98px) { 
+  .input{
+    flex-direction: column;
+  }
+  .actionBtn{
+    display: block;
+    width: 100%;
+  }
 }
